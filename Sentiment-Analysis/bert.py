@@ -85,7 +85,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model.to(device)
 print(device)
 
-batch_size = 4
+batch_size = 8
 
 dataloader_train = DataLoader(
     dataset_train,

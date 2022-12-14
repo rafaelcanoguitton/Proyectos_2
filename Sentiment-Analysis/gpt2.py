@@ -12,6 +12,8 @@ from tqdm import tqdm
 import random
 import os
 
+torch.cuda.empty_cache()
+
 seed_val = 17
 random.seed(seed_val)
 np.random.seed(seed_val)
@@ -39,6 +41,8 @@ tokenizer = GPT2Tokenizer.from_pretrained(
     do_lower_case=True,
 )
 tokenizer.pad_token = tokenizer.eos_token
+tokenizer.padding_side = 'left'
+
 
 
 encoded_data_train = tokenizer.batch_encode_plus(
@@ -96,7 +100,7 @@ dataloader_train = DataLoader(
 dataloader_val = DataLoader(
     dataset_val,
     sampler=RandomSampler(dataset_val),
-    batch_size=32
+    batch_size=16
 )
 optimizer = AdamW(
     model.parameters(),
@@ -167,6 +171,7 @@ def accuracy_per_class(preds, labels):
 
 def train_gpt2():
     global model
+    model.config.pad_token_id = model.config.eos_token_id
     for epoch in tqdm(range(1, epochs+1)):
         model.train()
         loss_train_total = 0

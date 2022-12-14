@@ -215,3 +215,16 @@ def train_xlnet():
         tqdm.write(f'F1 Score (weighted): {val_f1}')
 
     accuracy_per_class(predictions, true_vals)
+
+def evaluate_epoch(epoch):
+    global model
+    model.load_state_dict(torch.load(f'Models/XLNET_ft_Epoch{epoch}.model', map_location=torch.device('cuda')))
+    print(f'Loaded XLNET_ft_Epoch{epoch}.model')
+    tqdm.write(f'\nEpoch {epoch}')
+    # loss_train_avg = loss_train_total/len(dataloader_train)
+    # tqdm.write(f'Training loss: {loss_train_avg}')
+    val_loss, predictions, true_vals = evaluate(dataloader_val)
+    val_f1 = f1_score_func(predictions, true_vals)
+    accuracy_per_class(predictions, true_vals)
+    tqdm.write(f'Validation loss: {val_loss}')
+    tqdm.write(f'F1 Score (weighted): {val_f1}')

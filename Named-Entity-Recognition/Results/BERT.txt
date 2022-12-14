@@ -1,0 +1,7 @@
+Epochs: 1 | Loss:  0.236 | Accuracy:  0.931 | Val_Loss:  0.157 | Accuracy:  0.952 | F1_score:  0.812
+57:39<00:00
+Epochs: 2 | Loss:  0.148 | Accuracy:  0.954 | Val_Loss:  0.131 | Accuracy:  0.961 | F1_score:  0.844
+54:08<00:00
+Epochs: 3 | Loss:  0.123 | Accuracy:  0.962 | Val_Loss:  0.120 | Accuracy:  0.964 | F1_score:  0.854
+54:22<00:00
+Test Accuracy:  0.966

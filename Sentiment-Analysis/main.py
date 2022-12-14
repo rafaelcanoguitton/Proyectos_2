@@ -1,6 +1,9 @@
 #from bert import train_bert
-from xlnet import train_xlnet
-#from gpt2 import train_gpt2
+#from xlnet import train_xlnet,evaluate_epoch
+#from electra import train_electra
+from gpt2 import train_gpt2
+#from albert import train_albert
+#from roberta import train_roberta
 # import argparse
 # import sys
 
@@ -48,4 +51,10 @@ from xlnet import train_xlnet
 # if __name__ == '__main__':
 #     main()
 
-train_xlnet()
+#train_xlnet()
+#train_bert()
+#evaluate_epoch(2)
+train_gpt2()
+#train_electra()
+#train_albert()
+#train_roberta()

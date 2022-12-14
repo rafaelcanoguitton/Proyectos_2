@@ -1,0 +1,89 @@
+Epoch 1                                                                                                                                     
+Training loss: 0.46279272679839895                                                                                                          
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 299/299 [01:49<00:00,  2.74it/s]
+Class: not_cyberbullying█████████████████████████████████████████████████████████████████████████████████▋| 298/299 [01:48<00:00,  2.72it/s]
+Accuracy:977/1624
+
+Class: gender
+Accuracy:1302/1531
+
+Class: religion
+Accuracy:1519/1566
+
+Class: other_cyberbullying
+Accuracy:1288/1612
+
+Class: age
+Accuracy:1565/1603
+
+Class: ethnicity
+Accuracy:1551/1603
+
+Validation loss: 0.3698550960045918                                                                                                         
+F1 Score (weighted): 0.8598197512067538                                                                                                     
+                                                                                                                                            
+Epoch 2                                                                                                                                     
+Training loss: 0.31180677946117086                                                                                                          
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 299/299 [01:37<00:00,  3.06it/s]
+Class: not_cyberbullying███████████████████████████████████████████████████████████████████████████████████████▋| 298/299 [01:37<00:00,  3.04it/s]
+Accuracy:980/1624
+
+Class: gender
+Accuracy:1386/1531
+
+Class: religion
+Accuracy:1513/1566
+
+Class: other_cyberbullying
+Accuracy:1283/1612
+
+Class: age
+Accuracy:1566/1603
+
+Class: ethnicity
+Accuracy:1553/1603
+
+Validation loss: 0.38409174378415456                                                                                                        
+F1 Score (weighted): 0.8669485756129546                                                                                                     
+                                                                                                                                            
+Epoch 3                                                                                                                                           
+Training loss: 0.25798475090757184                                                                                                          
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 299/299 [02:05<00:00,  2.37it/s]
+Class: not_cyberbullying███████████████████████████████████████████████████████████████████████████████████████▋| 298/299 [02:05<00:00,  2.35it/s]
+Accuracy:959/1624
+
+Class: gender
+Accuracy:1365/1531
+
+Class: religion
+Accuracy:1519/1566
+
+Class: other_cyberbullying
+Accuracy:1298/1612
+
+Class: age
+Accuracy:1568/1603
+
+Class: ethnicity
+Accuracy:1564/1603
+
+Validation loss: 0.45450053964570214                                                                                                        
+F1 Score (weighted): 0.8658138712693756                                                                                                     
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [1:24:11<00:00, 1683.73s/it]
+Class: not_cyberbullying
+Accuracy:959/1624
+
+Class: gender
+Accuracy:1365/1531
+
+Class: religion
+Accuracy:1519/1566
+
+Class: other_cyberbullying
+Accuracy:1298/1612
+
+Class: age
+Accuracy:1568/1603
+
+Class: ethnicity
+Accuracy:1564/1603

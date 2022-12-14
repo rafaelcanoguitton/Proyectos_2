@@ -1,0 +1,60 @@
+python electra.py && python albert.py && python roberta.py 
+Some weights of the model checkpoint at google/electra-small-discriminator were not used when initializing ElectraForTokenClassification: ['discriminator_predictions.dense_prediction.bias', 'discriminator_predictions.dense.bias', 'discriminator_predictions.dense_prediction.weight', 'discriminator_predictions.dense.weight']
+- This IS expected if you are initializing ElectraForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing ElectraForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ElectraForTokenClassification were not initialized from the model checkpoint at google/electra-small-discriminator and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Epoch:  0
+  0%|                                                                                                                                                                                                                                                                                                         | 0/19184 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+Epochs: 1 | Loss:  0.297 | Accuracy:  0.917 | Val_Loss:  0.204 | Accuracy:  0.940 | F1_score:  0.785
+Epoch:  1
+ 
+ 31%|█████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                                                                                                    | 5980/19184 [03:47<08:21, 26.33it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19184/19184 [12:09<00:00, 26.29it/s]
+
+Epochs: 2 | Loss:  0.193 | Accuracy:  0.941 | Val_Loss:  0.163 | Accuracy:  0.951 | F1_score:  0.807
+Epoch:  2
+  0%|                                                                                                                                                                                                                                                                                                         | 0/19184 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+
+Epochs: 3 | Loss:  0.167 | Accuracy:  0.949 | Val_Loss:  0.158 | Accuracy:  0.952 | F1_score:  0.818
+
+Test Accuracy:  0.952
+
+Epoch:  0
+  0%|                                                                                                                                                                                                                                                                                                         | 0/19184 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19184/19184 [55:22<00:00,  5.77it/s]
+
+Epochs: 1 | Loss:  0.741 | Accuracy:  0.850 | Val_Loss:  0.675 | Accuracy:  0.849 | F1_score:  0.383
+Epoch:  1
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19184/19184 [55:27<00:00,  5.77it/s]
+
+Epochs: 2 | Loss:  0.644 | Accuracy:  0.850 | Val_Loss:  0.633 | Accuracy:  0.849 | F1_score:  0.383
+Epoch:  2
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19184/19184 [55:24<00:00,  5.77it/s]
+
+Epochs: 3 | Loss:  0.618 | Accuracy:  0.850 | Val_Loss:  0.626 | Accuracy:  0.849 | F1_score:  0.383
+
+Test Accuracy:  0.851
+
+Epoch:  0
+  0%|                                                                                                                                                                                                                                                                                                         | 0/19184 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19184/19184 [53:15<00:00,  6.00it/s]
+
+Epochs: 1 | Loss:  0.250 | Accuracy:  0.926 | Val_Loss:  0.167 | Accuracy:  0.948 | F1_score:  0.809
+Epoch:  1
+  0%|                                                                                                                                                                                                                                                                                                         | 0/19184 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19184/19184 [53:14<00:00,  6.01it/s]
+
+Epochs: 2 | Loss:  0.157 | Accuracy:  0.952 | Val_Loss:  0.137 | Accuracy:  0.959 | F1_score:  0.834
+Epoch:  2
+  0%|                                                                                                                                                                                                                                                                                                         | 0/19184 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19184/19184 [53:16<00:00,  6.00it/s]
+
+Epochs: 3 | Loss:  0.130 | Accuracy:  0.960 | Val_Loss:  0.120 | Accuracy:  0.963 | F1_score:  0.853
+
+Test Accuracy:  0.965
